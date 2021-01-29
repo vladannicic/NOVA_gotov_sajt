@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#e84e1b">
+<meta name="viewport" content="width=device-width">
+<title>NOVA by ITAcademy</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+<script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+	
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+
+
+	
+	<div class="topnav" id="myTopnav">
+		<div class="wrapper">
+		<a href="index.html" class="active">Home</a>
+		<div class="dropdown">
+		  <button class="dropbtn">PARD-DIGITALNI 
+			<i class="fa fa-caret-down"></i>
+		  </button>
+		  <div class="dropdown-content">
+			<a href="products.html">MONOKULARI</a>
+			<a href="products.html">OPTIKE</a>
+			<a href="products.html">NASTAVCI</a>
+		  </div>
+		</div> 
+		<div class="dropdown">
+			<button class="dropbtn">PARD-TERMALNI 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			  <a href="products.html">OPTIKE</a>
+			</div>
+		  </div> 
+		  <div class="dropdown">
+			<button class="dropbtn">OPTIČKI NIŠANI 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="news.html">DISCOVERY - uskoro</a>
+				<a href="news.html">VECTOR OPTICS - uskoro</a>
+			</div>
+		  </div>
+		  <a href="news.html">Vesti</a>
+		  <a href="contact.html">Kontakt</a> 
+		  <a href="about.html">O nama</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	  </div>
+	</div>
+    
+    <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10703.404101768814!2d20.380136476818556!3d44.67535334349913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a72c60c37731d%3A0xa2a6fa66160c3e5c!2z0JPRmtC40L7QvdGB0LrQsCAyLCDQodGA0LXQvNGH0LjRhtCw!5e0!3m2!1ssr!2srs!4v1606242278737!5m2!1ssr!2srs" width="100%" height="340px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+    <section id="central">
+    
+    
+    	<div class="wrapper">
+        
+        	<main id="mainFull">
+
+            	<h1>Kontaktirajte nas</h1>
+                
+                <p>Dolore cupiditate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, provident, veniam mollitia quis quos dolorum nulla temporibus pariatur iusto architecto repellat quaerat. Earum, aliquam exercitationem animi sit iusto labore est eius expedita unde praesentium! Saepe, ea, a ut delectus eos ducimus harum ratione expedita voluptatibus soluta sunt ipsum libero debitis commodi eaque atque quae architecto enim fuga ullam adipisci eum ex sed suscipit consectetur. Eaque, voluptatem, doloremque placeat odio laboriosam fugit repellat incidunt omnis accusantium fuga nulla vero dolores eveniet animi ab eius corporis modi eum repudiandae alias. Laudantium expedita labore blanditiis atque quisquam repellendus iure molestias eligendi facilis dolores.Minima, ipsam, animi, voluptatum cumque reiciendis architecto reprehenderit a deleniti laboriosam consequuntur at assumenda nisi optio ipsum quos modi eius placeat!</p>
+                
+                <div class="contactInfo">
+                    <p><i class="fa fa-2x fa-phone"></i> 062.20.24.24</p>
+                    <p><i class="fa fa-2x fa-envelope"></i>nvoptics.bg@gmail.com</p>
+                    <p><i class="fa fa-2x fa-globe"></i>www.nvoptics.rs</p>
+                    <p><i class="fa fa-2x fa-home"></i>Gnjionska, 11253 Sremčica, Beograd, Srbija</p>
+                </div>
+                
+            </main>
+        
+            
+        </div>
+    </section>
+	<header id="header">
+    
+    	<div id="headerTop">
+        	<div class="wrapper">
+            	<div id="headerTopLeft">
+					<span><i class="fa fa-lg fa-phone"></i>&nbsp;&nbsp;&nbsp;062.20.24.24</span>
+					<span><i class="fa fa-lg fa-envelope-o"></i>&nbsp;&nbsp;&nbsp;nvoptics.bg@gmail.com</span>
+                </div>
+            	<div id="headerTopRight">
+                	<a href="#" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+					<a href="#" target="_blank"><i class="fa fa-camera-retro fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        
+
+    
+	</header><!-- kraj #header -->   
+    
+    
+    
+    <footer id="footer" class="negative">
+    	<div class="wrapper">
+    		
+            <div class="footerBlock">
+				<h3>PARD</h3>
+				<hr>
+				<a href="products.html"><p class="bold">DIGITALNI</p></a>
+				<hr>
+				<a href="nv019.html"><p>MONOKULAR nv019</p></a>
+				<hr>
+				<a href="nv008.html"><p>OPTIKA nv008</p></a>
+				<hr>
+				<a href="nv008lrf.html"><p>OPTIKA nv008 -lrf</p></a>
+				<hr>
+				<a href="nv007.html"><p>NASTAVCI nv007</p></a>
+				<hr>
+			</div>
+            <div class="footerBlock">
+				<h3>PARD</h3>
+				<hr>
+				<a href="products.html"><p class="bold">TERMALNI</p></a>
+				<hr>
+				<a href="sa19.html"><p>SA 19, 25, 35 ,45 </p></a>
+			   <hr>
+			   <a href="sa19lrf.html"><p> SA 19, 25, 35, 45 -lrf</p></a>
+			   <hr>
+			   <a href="news.html"><p>G - serija</p></a>
+			   <hr>
+			   <a href="news.html"><p>T-pro 19, 25, 35, 45 / lrf</p></a>
+			   <hr>
+			</div>
+            
+            <div class="footerBlockR">
+            	<img src="">
+            </div>
+            
+    	</div>
+        <div class="wrapper" id="footerBottom">
+        	<a href="#top" class="button">back to top</a>
+        
+        
+        </div>
+    </footer>
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
