@@ -29,22 +29,7 @@
 	</script>
 	
 	
-	<script>
-	  $(function() {
-		$('a[href*="#"]:not([href="#"])').click(function() {
-		  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-			  $('html, body').animate({
-				scrollTop: target.offset().top
-			  }, 1000);
-			  return false;
-			}
-		  }
-		});
-	  });
-	</script>
+
 
 
 </head>
@@ -53,7 +38,7 @@
 
 	
 	<div class="topnav" id="myTopnav">
-		<div class="wrapper"></div>
+		<div class="wrapper">
 		<a href="index.html" class="active">Home</a>
 		<div class="dropdown">
 		  <button class="dropbtn">PARD-DIGITALNI 
