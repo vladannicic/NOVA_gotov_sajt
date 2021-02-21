@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="theme-color" content="#e84e1b">
 <meta name="viewport" content="width=device-width">
-<title>NOVA by ITAcademy</title>
+<title>NV Optics</title>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
@@ -13,13 +13,47 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	$(document).ready(function(){
+	  $('.partners').bxSlider({
+		slideWidth: 220,
+		minSlides: 2,
+		maxSlides: 6,
+		slideMargin:25,
+		moveSlides: 1,
+		pager: false,
+		auto: true
+	  });
+	});
+	</script>
+	
+	
+	<script>
+	  $(function() {
+		$('a[href*="#"]:not([href="#"])').click(function() {
+		  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+			  $('html, body').animate({
+				scrollTop: target.offset().top
+			  }, 1000);
+			  return false;
+			}
+		  }
+		});
+	  });
+	</script>
+
+
 </head>
 
 <body>
 
 	
 	<div class="topnav" id="myTopnav">
-		<div class="wrapper">
+		<div class="wrapper"></div>
 		<a href="index.html" class="active">Home</a>
 		<div class="dropdown">
 		  <button class="dropbtn">PARD-DIGITALNI 
@@ -62,7 +96,7 @@
      
 			<h1 class="font-class">NIGHT VISION OPTICS doo</h1>
 			<h4>Beograd - Čukarica</h4>
-			<p class="bold">2020</p>
+	
            
             <p><a href="#about" class="button">Više o nama &raquo;</a></p>
         
@@ -145,7 +179,7 @@
             <p>Proizvodi koji se rade porudžbinom</p>
         
             <div class="partners" >
-              <div class="slide"><img src="./images/G SERIJA/Handheld Thermal Camera G35LRF.png"><p>Thermal</p></div>
+              <div class="slide"><img src="./images/G SERIJA/Handheld Thermal Camera G35LRF.png"></div>
               <div class="slide"><img src="./images/T-PRO/T-PRO  35/001（测距35）.png"></div>
               <div class="slide"><img src="./images/T-PRO/T-PRO 19/001（测距19）.png"></div>
               <div class="slide"><img src="./images/T-PRO/T-PRO 25/001（测距25）.png"></div>
@@ -166,8 +200,8 @@
 					<span><i class="fa fa-lg fa-envelope-o"></i>&nbsp;&nbsp;&nbsp;nvoptics.bg@gmail.com</span>
                 </div>
             	<div id="headerTopRight">
-                	<a href="#" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
-					<a href="#" target="_blank"><i class="fa fa-camera-retro fa-lg"></i></a>
+                	<span><i class="fa fa-lg fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;nvoptics.facebook</span>
+					<span><i class="fa fa-camera-retro fa-lg"></i>&nbsp;&nbsp;&nbsp;nvoptics.instagram</span>
                 </div>
             </div>
         </div>
@@ -183,31 +217,31 @@
     		
             <div class="footerBlock">
 				<h3>PARD</h3>
-				<hr>
+			
 				<a href="products.html"><p class="bold">DIGITALNI</p></a>
-				<hr>
+		
 				<a href="nv019.html"><p>MONOKULAR nv019</p></a>
-				<hr>
+		
 				<a href="nv008.html"><p>OPTIKA nv008</p></a>
-				<hr>
+			
 				<a href="nv008lrf.html"><p>OPTIKA nv008 -lrf</p></a>
-				<hr>
+			
 				<a href="nv007.html"><p>NASTAVCI nv007</p></a>
-				<hr>
+				
 			</div>
             <div class="footerBlock">
 				<h3>PARD</h3>
-				<hr>
+	
 				<a href="products.html"><p class="bold">TERMALNI</p></a>
-				<hr>
+			
 				<a href="sa19.html"><p>SA 19, 25, 35 ,45 </p></a>
-			   <hr>
+			  
 			   <a href="sa19lrf.html"><p> SA 19, 25, 35, 45 -lrf</p></a>
-			   <hr>
+			
 			   <a href="news.html"><p>G - serija</p></a>
-			   <hr>
+			
 			   <a href="news.html"><p>T-pro 19, 25, 35, 45 / lrf</p></a>
-			   <hr>
+			  
 			</div>
             
             <div class="footerBlockR">

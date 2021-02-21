@@ -1,14 +1,4 @@
-$(document).ready(function(){
-    $('.partners').bxSlider({
-      slideWidth: 220,
-      minSlides: 2,
-      maxSlides: 6,
-      slideMargin: 25,
-      moveSlides: 1,
-      pager: false,
-      auto: true
-    });
-  });
+
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
